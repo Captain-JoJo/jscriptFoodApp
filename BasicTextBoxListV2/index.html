@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventoryApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <ul class="header">
+        <li class="tabs"><a href="#about">Food Inventory</a></li>
+    </ul>
+    <div class="container">
+
+        <input type="text" id="item">Add Item to Inventory
+        <div>
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+        </div>
+        
+        <ul id="listOfItems"></ul>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
