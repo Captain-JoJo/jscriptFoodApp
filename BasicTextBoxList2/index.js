@@ -11,13 +11,3 @@ function removeItem() {
     let removedItem = document.getElementById(foodItem.value)
     ul.removeChild(removedItem)
 }
-
-function savedItem() {
-    let savedFoodItem = document.getElementById("item").value
-    localStorage.setItem('saveList', savedFoodItem)
-    
-}
-function loadItem() {
-    let savedFoodItem = localStorage.getItem('saveList')
-    document.getElementById("item").value = savedFoodItem
-}
