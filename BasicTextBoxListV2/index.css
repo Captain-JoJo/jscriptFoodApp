@@ -1,15 +1,36 @@
-.container {
-    background-color: burlywood;
-} 
+.grid {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: minmax(100px, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.grid .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21F5FF;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+}
 
+.grid2 .item {
+    color: white;
+    max-width: 300px;
+    background-color: #006469;
+}
 .header {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-  }
-  
+    background-color:#006469;
+}
+
 .tabs {
     float: left;
 }
@@ -22,4 +43,15 @@
 }
 .tabs a:hover {
     background-color: #111;
+}
+.lrgText{
+    font-size: large;
+}
+.textCenter{
+    text-align: center;
+}
+.imgCenter{
+    display: block;
+    margin: auto;
+    width: 50%;
 }

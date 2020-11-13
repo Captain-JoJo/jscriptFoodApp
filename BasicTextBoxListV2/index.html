@@ -9,13 +9,36 @@
     <ul class="header">
         <li class="tabs"><a href="#about">Food Inventory</a></li>
     </ul>
+    
+    <div class="grid">
+        <div class="item textCenter">
+            <input type="text" id="item" placeholder="Add Item to Inventory">
+            <div>
+                <button onclick="addItem()">Add Item</button>
+                <button onclick="removeItem()">Remove Item</button>
+            </div>
+        </div>
+        <div class="item">
+        </div>
+        <div class="item"></div>
+    </div>
+    </div>
+        <div class="grid2">
+        <div class="item">
+            <h3 class="textCenter lrgText">Coffee</h3>
+            <img class="imgCenter" src="images/foldgersCoffee.jpg" alt="coffee" width="150" height="150">
+        </div>
+        <div class="item">
+            <h3 class="textCenter lrgText">Bananas</h3>
+            <img class="imgCenter" src="images/bananas.jpg" alt="bananas" width="150" height="150">
+        </div>
+        <div class="item">
+            <h3 class="textCenter lrgText">Grapefruit</h3>
+            <img class="imgCenter" src="images/grapefruitCups.jpg" alt="grapefruit" width="150" height="150">
+        </div>
+    </div>
     <div class="container">
 
-        <input type="text" id="item">Add Item to Inventory
-        <div>
-            <button onclick="addItem()">Add Item</button>
-            <button onclick="removeItem()">Remove Item</button>
-        </div>
         
         <ul id="listOfItems"></ul>
         <script src="index.js"></script>
